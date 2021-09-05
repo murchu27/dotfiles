@@ -25,3 +25,8 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# setup environment for login shell
+if [ -f "$HOME/.env" ]; then
+    . "$HOME/.env"
+fi
