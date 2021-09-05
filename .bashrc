@@ -116,10 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # set PATH so it includes user's private bin if it exists
 #if [ -d "$HOME/.local/bin" ] ; then
     #PATH="$HOME/.local/bin:$PATH"
@@ -128,4 +124,11 @@ export NVM_DIR="$HOME/.nvm"
 # setup environment for cargo (if it exists on this system)
 if [ -d "$HOME/.cargo/env" ] ; then
     . "$HOME/.cargo/env"
+fi
+
+# setup environment for nvm (if it is used on this system)
+if [ -d "$HOME/.nvm" ] ; then
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
