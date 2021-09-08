@@ -4,7 +4,7 @@ if [ -d "/usr/local/go/bin" ] ; then
 fi
 
 # setup environment for cargo (if it exists on this system)
-if [ -d "$HOME/.cargo/env" ] ; then
+if [ -f "$HOME/.cargo/env" ] ; then
     . "$HOME/.cargo/env"
 fi
 
