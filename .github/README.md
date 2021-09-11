@@ -27,6 +27,10 @@ Now we can use regular git commands like:
     dotfiles commit -a -m "My commit 3"
     dotfiles push
 
+Notice that `dotfiles status` will list all files in your home directory as untracked. You can hide these files from this output without adding them to a `.gitignore` by running the following:
+
+    dotfiles config --local status.showUntrackedFiles no
+
 ---
 
 [Original instructions][3]
