@@ -19,3 +19,8 @@ fi
 if [ -f "$HOME/.env" ]; then
     . "$HOME/.env"
 fi
+
+# add binaries in ~/.local/bin to PATH (if it exists on this system)
+if [ -d "$HOME/.local/bin" ] ; then
+    export PATH=$PATH:$HOME/.local/bin
+fi
