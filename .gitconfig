@@ -2,6 +2,6 @@
 	email = m.b.murphy15@gmail.com
 	name = murchu27
 [core]
-	editor = vim
+	editor = nvim
 [init]
 	defaultBranch = main
