@@ -19,7 +19,7 @@ The working tree is stored somewhere else, in this case, the home directory.
 
 To avoid the pain of typing this out everytime, we could add an alias. Note that the [`.bash_aliases`][2] included in this repo already has this alias defined.
 
-    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
     
 Now we can use regular git commands like:
 
