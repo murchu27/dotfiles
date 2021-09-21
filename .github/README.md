@@ -33,6 +33,10 @@ Notice that `dotfiles status` will list all files in your home directory as untr
 
 ### Further setup
 
+#### Shell
+
+I use `zsh`, with the `oh-my-zsh` package manager.
+
 [Powerlevel10k][3] is the zsh theme of choice here. This needs to be installed into your `oh-my-zsh` custom directory ([instructions][4])
 
 ---
