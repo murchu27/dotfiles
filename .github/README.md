@@ -31,10 +31,16 @@ Notice that `dotfiles status` will list all files in your home directory as untr
 
     dotfiles config --local status.showUntrackedFiles no
 
+### Further setup
+
+[Powerlevel10k][3] is the zsh theme of choice here. This needs to be installed into your `oh-my-zsh` custom directory ([instructions][4])
+
 ---
 
-[Original instructions][3]
+[Original instructions][5]
 
 [1]: https://www.geeksforgeeks.org/bare-repositories-in-git/
 [2]: ../.bash_aliases#L14
-[3]: https://antelo.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b
+[3]: https://github.com/romkatv/powerlevel10k
+[4]: https://github.com/romkatv/powerlevel10k/blob/master/README.md#oh-my-zsh
+[5]: https://antelo.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b
