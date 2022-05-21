@@ -15,6 +15,17 @@ if [ -d "$HOME/.nvm" ] ; then
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
 
+# setup environment for the Garmin Connect IQ SDK
+if [ -f "$HOME/.Garmin/ConnectIQ/current-sdk.cfg" ] ; then
+    export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
+fi
+
+# setup environment for Android Studio
+if [ -d "$HOME/.android-studio" ] ; then
+    export PATH=$PATH:$HOME/.android-studio/bin
+fi
+
+
 # setup environment for login shell
 if [ -f "$HOME/.env" ]; then
     . "$HOME/.env"
@@ -23,4 +34,8 @@ fi
 # add binaries in ~/.local/bin to PATH (if it exists on this system)
 if [ -d "$HOME/.local/bin" ] ; then
     export PATH=$PATH:$HOME/.local/bin
+fi
+
+if [ -d "$HOME/.local/share/gem/ruby/3.0.0" ] ; then
+    export PATH=$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin
 fi
