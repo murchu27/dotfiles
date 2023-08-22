@@ -30,3 +30,8 @@ fi
 if [ -f "$HOME/.env" ]; then
     . "$HOME/.env"
 fi
+
+
+# Added by Toolbox App
+export PATH="$PATH:/home/murchu27/.local/share/JetBrains/Toolbox/scripts"
+
