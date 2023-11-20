@@ -20,12 +20,6 @@ if [ -f "$HOME/.Garmin/ConnectIQ/current-sdk.cfg" ] ; then
     export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 fi
 
-# setup environment for Android Studio
-if [ -d "$HOME/.android-studio" ] ; then
-    export PATH=$PATH:$HOME/.android-studio/bin
-fi
-
-
 # setup environment for login shell
 if [ -f "$HOME/.env" ]; then
     . "$HOME/.env"
